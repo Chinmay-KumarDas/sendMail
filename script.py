@@ -3,6 +3,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 sender_email = os.getenv('SENDER_EMAIL')
 sender_password = os.getenv('SENDER_PASSWORD')
@@ -73,7 +76,7 @@ def send_emails_from_file(file_number):
         print(f'Email sent to {email}')
 
 # Specify the file number for today's batch (e.g., batch_1, batch_2, etc.)
-file_number = 26  # Change this number each day ------- done till Batch 26
+file_number = 27  # Change this number each day ------- done till Batch 27
 
 # Send emails from the specified batch file
 send_emails_from_file(file_number)
