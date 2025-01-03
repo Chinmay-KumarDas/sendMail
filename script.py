@@ -1,11 +1,14 @@
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
+import os
+
+sender_email = os.getenv('SENDER_EMAIL')
+sender_password = os.getenv('SENDER_PASSWORD')
 # import time
 
 # Email configuration
-sender_email = 'tcser2k24@gmail.com'  # Replace with your email
-sender_password = 'pzhhuqpofergrjog'    # Replace with your email password
 
 # HTML email content (same as before)
 html_content = """
