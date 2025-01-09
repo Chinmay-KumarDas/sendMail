@@ -11,6 +11,8 @@ sender_email = os.getenv('SENDER_EMAIL')
 sender_password = os.getenv('SENDER_PASSWORD')
 # import time
 
+print(sender_email, sender_password)
+
 # Email configuration
 
 # HTML email content (same as before)
@@ -76,7 +78,7 @@ def send_emails_from_file(file_number):
         print(f'Email sent to {email}')
 
 # Specify the file number for today's batch (e.g., batch_1, batch_2, etc.)
-file_number = 27  # Change this number each day ------- done till Batch 27
+file_number = 30  # Change this number each day ------- done till Batch 30
 
 # Send emails from the specified batch file
 send_emails_from_file(file_number)
