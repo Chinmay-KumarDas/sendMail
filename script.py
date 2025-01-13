@@ -78,9 +78,11 @@ def send_emails_from_file(file_number):
         print(f'Email sent to {email}')
 
 # Specify the file number for today's batch (e.g., batch_1, batch_2, etc.)
-file_number = 30  # Change this number each day ------- done till Batch 30
+file_number = 31  # Change this number each day ------- done till Batch 31
 
 # Send emails from the specified batch file
 send_emails_from_file(file_number)
 
 server.quit()
+
+
